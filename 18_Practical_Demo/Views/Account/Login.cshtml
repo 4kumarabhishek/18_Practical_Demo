@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<hr />
+<form method="post" action="/account/login">
+    <label>Enter username:</label><br />
+    <input type="text" name="user" /><br />
+
+    <label>Enter password:</label><br />
+    <input type="password" name="pass" /><br />
+
+    <input type="submit" value="Login" /><br />
+</form>
+<br />
+
+<span>@ViewBag.msg</span>
+

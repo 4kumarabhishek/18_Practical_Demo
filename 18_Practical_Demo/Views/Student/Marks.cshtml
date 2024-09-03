@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Marks";
+}
+
+<h2>Marks Details</h2>
+<hr />
+<div style="text-align:right">
+    <h4>Welcome @Session["uname"]</h4>
+</div>
+<form method="post" acton="/student/marks">
+    <label>Enter theory marks:</label><br />
+    <input type="text" name="theory" /><br />
+
+    <label>Enter practical marks:</label><br />
+    <input type="text" name="pracs" /><br />
+
+    <label>Enter oral marks:</label><br />
+    <input type="text" name="oral" /><br />
+
+    <input type="submit" value="Save" />
+</form>
+<br />
+<br />
+<span style="color:red">@ViewBag.msg</span>
+
